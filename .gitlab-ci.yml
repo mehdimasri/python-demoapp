@@ -1,0 +1,6 @@
+simple_test:
+ image: python:3.9.14-alpine
+ before_script:
+  - apt-get update && apt-get install make
+ script:
+  - make test
